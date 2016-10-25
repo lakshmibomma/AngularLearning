@@ -20,11 +20,12 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.pageTitle = "RIIS Management LLC";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>Angular 2 Template</h1>'
+                        template: "\n    <div><h1>{{pageTitle}}</h1>\n        <pm-products></pm-products>\n    </div>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

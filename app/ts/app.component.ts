@@ -1,8 +1,13 @@
 import {Component} from 'angular2/core';
-
 @Component({
     selector: 'my-app',
-    template: '<h1>Angular 2 Template</h1>'
+    template: `
+    <div><h1>{{pageTitle}}</h1>
+        <pm-products></pm-products>
+    </div>
+    `
 })
 
-export class AppComponent {}
+export class AppComponent {
+    pageTitle:string = "RIIS Management LLC";
+}
