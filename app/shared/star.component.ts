@@ -1,5 +1,5 @@
 
-import {Component,OnChanges} from '@angular/core';
+import {Component,OnChanges,Input} from '@angular/core';
 
 
 @Component({
@@ -11,7 +11,7 @@ styleUrls: [ 'app/shared/star.component.css' ]
 
 export class StarComponent implements OnChanges
 {
-    rating: number = 4;
+    @Input() rating: number = 4;
     starWidth:number;
     ngOnChanges(): void
     {

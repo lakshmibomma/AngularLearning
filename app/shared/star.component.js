@@ -16,6 +16,10 @@ var StarComponent = (function () {
     StarComponent.prototype.ngOnChanges = function () {
         this.starWidth = this.rating * 86 / 5;
     };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Number)
+    ], StarComponent.prototype, "rating", void 0);
     StarComponent = __decorate([
         core_1.Component({
             selector: 'ai-star',
