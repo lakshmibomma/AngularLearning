@@ -4,7 +4,6 @@ import {ProductService} from './product.service'
 
 
 @Component({
-    selector: 'pm-products',
     moduleId: module.id,
     templateUrl: 'product-list.component.html',
     styleUrls:['product-list.component.css']
@@ -17,7 +16,7 @@ export class ProductListComponent  implements OnInit{
     listFilter:string = 'cart';
     errorMessage:string;
     private _productService:ProductService;
-     products: IProduct[] = [];
+    products: IProduct[] = [];
 
     constructor(productService:ProductService)
     {
