@@ -23,15 +23,16 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,
+                product_module_1.ProductModule,
                 router_1.RouterModule.forRoot([
                     { path: 'welcome', component: welcome_component_1.WelcomeComponent },
                     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
-                ]),
-                product_module_1.ProductModule
+                ])
             ],
             declarations: [
-                app_component_1.AppComponent, welcome_component_1.WelcomeComponent
+                app_component_1.AppComponent,
+                welcome_component_1.WelcomeComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
