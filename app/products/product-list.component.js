@@ -16,7 +16,7 @@ var ProductListComponent = (function () {
         this.imageWidth = 50;
         this.imageMargin = 2;
         this.showImage = false;
-        this.listFilter = 'cart';
+        this.listFilter = '';
         this.products = [];
         this._productService = productService;
     }
