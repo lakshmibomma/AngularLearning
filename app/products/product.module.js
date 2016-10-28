@@ -30,6 +30,7 @@ var ProductModule = (function () {
                 ]),
                 shared_module_1.SharedModule
             ],
+            exports: [router_1.RouterModule],
             declarations: [
                 product_list_component_1.ProductListComponent,
                 product_filter_pipe_1.ProductFilterPipe,

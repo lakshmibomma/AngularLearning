@@ -17,6 +17,7 @@ imports: [
          ]),
          SharedModule
   ],
+  exports:[RouterModule],
 declarations: [
     ProductListComponent,
     ProductFilterPipe,
