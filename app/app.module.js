@@ -26,7 +26,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot([
                     { path: 'products', component: product_list_component_1.ProductListComponent },
-                    { path: 'products/:id', component: product_detail_component_1.ProductDetailComponent },
+                    { path: 'product/:id', component: product_detail_component_1.ProductDetailComponent },
                     { path: 'welcome', component: welcome_component_1.WelcomeComponent },
                     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
